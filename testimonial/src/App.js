@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import logo from './loto.svg'
 import './App.css';
+
+import Testimonial from './components/Testimonial'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>
+          Insert your testimonial HERE
+        </h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='#Testimonial'
         >
-          Learn React
+          Testimonial
         </a>
       </header>
+
+      <div className='main'id='Testimonial' >
+        
+          <h1>
+            This is what our <span>HAPPY</span> clients think about our services
+          </h1>
+        
+        {/* this is a component */}
+        <Testimonial />
+      </div>
+
     </div>
+    
   );
 }
 
-export default App;
+export default App

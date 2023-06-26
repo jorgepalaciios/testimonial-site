@@ -1,0 +1,42 @@
+
+.testimonial-container {
+  width: 1170px;
+  height: 368px;
+  margin: 10px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  color: #1f1f1f;
+
+}
+
+.testimonial-img {
+  height: 100%;
+  width: auto;
+}
+
+.testimonial-text-container {
+  font-size: 18px;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.testimonial-name {
+  font-size: 1.3rem;
+}
+
+.testimonial-position {
+  font-size: 1.15rem;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+.testimonial-textbox {
+  font-size: 1.1rem;
+  text-align: justify;
+}
