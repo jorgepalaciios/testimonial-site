@@ -1,20 +1,17 @@
-import React from 'react'
 import '../styles/Testimonial.css'
 
 
-function Testimonial() {
+function Testimonial(props) {
   return (
     <div className='testimonial-container'>
-      <img className='testimonial-img' 
-      src={require('../images/testimonial-jason.png')} 
-      alt='testimonial user img' />
+      <img className='testimonial-img'
+//by using -> `` with --> ${js code} we can create a dinamic character chain with js
+      src={require(`../images/testimonial-${props.image}.png`)} 
+      alt={`testimonial ${props.image} img`} />
       <div className='testimonial-text-container'>
-        <p className='testimonial-name'>Jason Belgium</p>
-        <p className='testimonial-position'>Systems Engineer - Apple</p>
-        <p className='testimonial-textbox'>"I was looking for a software development company to help me build a new website
-        for my business. I was hesitant at first, because I had heard some horror stories about companies that promised 
-        the world and then delivered a subpar product. But after reading some positive testimonials about MERAKI, 
-        I decided to give them a try."</p>
+        <p className='testimonial-name'><strong>{props.name}</strong> {props.country}</p>
+        <p className='testimonial-position'>{props.position} - <strong>{props.company}</strong></p>
+        <p className='testimonial-textbox'>"{props.testimonial}"</p>
       </div>
     </div>
   )

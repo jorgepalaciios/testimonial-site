@@ -12,9 +12,22 @@
 
 }
 
+@media screen and (max-width: 600px) {
+  .testimonial-container {
+    width: 100%;
+  }
+}
+
 .testimonial-img {
   height: 100%;
   width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-img {
+    height: 30%;
+    width: 30%;
+  }
 }
 
 .testimonial-text-container {
@@ -24,6 +37,12 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-text-container {
+    width: 50%;
+  }
 }
 
 .testimonial-name {
@@ -39,4 +58,10 @@
 .testimonial-textbox {
   font-size: 1.1rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-textbox .testimonial-position .testimonial-name .testimonial-text-container {
+    font-size: 0.81rem;
+  }
 }
